@@ -56,6 +56,20 @@ const filme2 = {
 //Semana 3 - crie um array vazio, é adicione os objetos usando o push()
 const filmes = [];
 
-filmes.push(filme, filme1, filme2);
+// filmes.push(filme, filme1, filme2);
+
+// console.log(filmes);
+
+//Semana 4 - crie um if...else para adicionar os objetos a array, se a propriedade do objeto for true ele e adicionado a array se for false exiba um alert
+let condicao = true
+if(filme.oscar && condicao){
+    filmes.push(filme)
+} else if(filme1.oscar && condicao){
+    filmes.push(filme1)
+} else if(filme2.oscar && condicao){
+    filmes.push(filme2)
+} else {
+    alert("Item não adicionado")
+};
 
 console.log(filmes);
