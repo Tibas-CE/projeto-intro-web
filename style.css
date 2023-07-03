@@ -1,0 +1,100 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.cabecalho{
+    background-color: black;
+    padding: 20px;
+}
+
+.cabecalho h1{
+    color: white;
+}
+
+#buscar{
+    text-align: center;
+    font-size: 30px;
+    padding: 10px;
+}
+
+#lista-filmes{
+    margin: 10px 150px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+.flex{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.filme-card{
+    background-color: red;
+    padding: 20px;
+    margin: 10px 100px;
+    /* border-radius: 15%; */
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    
+}
+
+.filme-card img{
+    height: 200px;
+    width: 200px;
+    align-self: stretch;
+}
+
+.filme-card h3 a{
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+    font: Oswald;
+    align-self: flex-start;
+}
+
+.filme-card h3 a:hover{
+    text-decoration: underline;
+    color: blanchedalmond;
+}
+
+.filme-card ul{
+    list-style-type: none;
+    align-self: flex-end;
+    font-size: 25px;
+    font: Ubuntu;
+}
+
+.footer{
+    background-color: black;
+    color: bisque;
+    text-align: center;
+    padding: 20px;
+}
+
+/* RESPONSIVIDADE */
+@media screen and (min-width: 1000px) {
+    .container{
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .container{
+        flex-wrap: wrap;
+    }
+    .filme-card{
+        flex-wrap: wrap;
+    }
+}
+

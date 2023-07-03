@@ -1,13 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="script.js"></script>
-    <title>Projeto Introcução a Web</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Ubuntu&display=swap" rel="stylesheet">
+    <script src="/scriptDom.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Lista de filmes</title>
 </head>
-<body>
+<body class="container">
+    
+    <header class="cabecalho">
+        <h1>Lista de Filmes</h1>
+    </header>
+
+    <main>
+        <div id="buscar">
+            <input type="text" id="inputSearch">
+            <button onclick="searchMovie()">Pesquisar</button>
+        </div>
+        <div id="list-movie">
+            <!-- <section class="filme-card">
+                <img src="https://www.themoviedb.org/t/p/w94_and_h141_bestv2/mNg0TQ0SGxtYSmqR9FkI2wHtC8Y.jpg" alt="filme">
+                <div class="flex">
+                    <h3> <a href="https://www.themoviedb.org/movie/78-blade-runner">Blader Runner: O caçador de androides</a></h3>
+                    <ul>
+                        <li>Lançamento: 25/12/1982</li>
+                        <li>Gênero: Ficção científica, Drama, Thriller</li>
+                        <li>Óscar: Não</li>
+                        <li>Elenco: Harrison Ford, Rutger Hauer, Sean Young, Daryl Hannah, Edward James</li>
+                    </ul>
+                </div>
+            </section> -->
+            
+            <!-- <section class="filmeCard">
+                <img src="https://www.themoviedb.org/t/p/w94_and_h141_bestv2/66cLRuqg7dLXRgvgk427leeZhjd.jpg" alt="filme">
+                <div class="flex">
+                    <h3> <a href="https://www.themoviedb.org/movie/62-2001-a-space-odyssey">2001: Uma Odisséia no Espaço</a> </h3>
+                    <ul>
+                        <li>Lançamento: 04/07/1968</li>
+                        <li>Gênero: Ficção científica, Mistério, Aventura</li>
+                        <li>Óscar: Melhores Efeitos visuais</li>
+                        <li>Elenco: Keir Dullea, Douglas Rain, Edwina Carrol, Penny Brahms, Margaret Tyzack</li>
+                    </ul>
+                </div>    
+            </section>
+            
+            <section class="filmeCard">
+                <img src="https://www.themoviedb.org/t/p/w94_and_h141_bestv2/nCbkOyOMTEwlEV0LtCOvCnwEONA.jpg" alt="filme">
+                <div class="flex">
+                    <h3> <a href="https://www.themoviedb.org/movie/157336-interstellar">Interestelar</a> </h3>
+                    <ul>
+                        <li>Lançamento: 06/11/2014</li>
+                        <li>Gênero: Ficção científica, Drama, Aventura</li>
+                        <li>Óscar: Melhores Efeitos visuais</li>
+                        <li>Elenco: Matthew McConaughey, Anne Hathaway, Jessica Chastain, Michael Caine, Mackenzie Foy</li>
+                    </ul>
+                </div>    
+            </section> -->
+
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <h4>Produzido por:</h4>
+        <h5>Tibério dos Santos Ferreira</h5>
+        <h5> <a href="https://github.com/tibas-ce">GitHub</a> </h5>
+        <p>Projeto de introdução a web proposto pelo bootcamp Labenu.</p>
+    </footer>
     
 </body>
 </html>
